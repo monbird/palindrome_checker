@@ -24,11 +24,17 @@ document.addEventListener("DOMContentLoaded", function(){
     
     let input = document.getElementById("inputPalindrome").value;
     let notification = document.getElementById("notification");
-    
-    if(isPalindrome(input)) {
-        notification.innerHTML = "True, this is a palindrome";
+
+
+    if (input == false) {
+        notification.innerHTML = "Empty input -> please provide a word or sentence";
+    } else if(isPalindrome(input)) {
+        notification.innerHTML = "Yay! It's a palindrome!:)";
+        // document.getElementsByTagName("body").style.backgroundColor=green;
+        document.body.style.backgroundColor = "#7CAA2D";
     } else {
-        notification.innerHTML = "False, this isn't a palindrome";
+        notification.innerHTML = "Nope, it's not a palindrome! :(";
+        document.body.style.backgroundColor = "#D24136";
     }
   });
 }); 
