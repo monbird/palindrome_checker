@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
     font-size: 15px;
-    font-family: sans-serif;
+    font-family: 'Bangers', cursive, sans-serif;
     line-height: 1.5;
     background-color: #34888C;
 }
@@ -19,15 +21,17 @@ body {
 h1 {
     padding-top: 20px;
     padding-bottom: 10px;
+    font-weight: lighter;
 }
 
 textarea {
     width: 400px;
     height: 100px;
     font-size: 18px;
+    padding-bottom: 5px;
 }
 textarea::placeholder {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #program {
@@ -41,10 +45,16 @@ button {
     margin: 15px auto;
     padding: 5px 15px;
     font-size: 20px;
+    font-family: 'Bangers', cursive, sans-serif;
     border-radius: 5px;
     border-color: #000;
     border-width: 1px;
     cursor: pointer;
+}
+
+button:hover {
+    font-size: 25px;
+    margin: 10px auto;
 }
 
 p {
